@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2026-10-05T17:00:00.000Z" agent="5.0" version="21.0.0" type="device">
+<mxfile host="app.diagrams.net" modified="2026-10-05T17:10:00.000Z" agent="5.0" version="21.0.0" type="device">
   <diagram id="TP3-ClassDiagram-UML" name="Class Diagram TP3 DPBO">
     <mxGraphModel dx="1800" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1600" math="0" shadow="0">
       <root>
@@ -122,49 +122,86 @@
           <mxGeometry y="104" width="350" height="178" as="geometry" />
         </mxCell>
 
-        <!-- RELASI 1: KOMPOSISI (KendaraanPengiriman -> MesinKendaraan) -->
-        <mxCell id="rel_komposisi" value="&lt;b&gt;Komposisi (1:1)&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=diamond;startFill=1;endArrow=none;strokeWidth=2.5;strokeColor=#212529;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="c_kendaraan" target="c_mesin">
+        <!-- ======================================================== -->
+        <!-- 1. COMPOSITION (KendaraanPengiriman -> MesinKendaraan)   -->
+        <!-- Style: Black diamond start -> Open arrow end            -->
+        <!-- ======================================================== -->
+        <mxCell id="rel_komposisi" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=diamond;startFill=1;startSize=14;endArrow=open;endFill=0;endSize=12;strokeWidth=1.8;strokeColor=#000000;" edge="1" parent="1" source="c_kendaraan" target="c_mesin">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
-        <!-- RELASI 2: ASOSIASI (Pengemudi -> KendaraanPengiriman) -->
-        <mxCell id="rel_asosiasi" value="&lt;b&gt;Asosiasi (uses-a)&lt;br/&gt;kendarai()&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;strokeWidth=2;strokeColor=#2B8A3E;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="c_pengemudi" target="c_kendaraan">
+        <!-- ======================================================== -->
+        <!-- 2. ASSOCIATION (Pengemudi -> KendaraanPengiriman)       -->
+        <!-- Style: Solid straight line -> Open arrow end            -->
+        <!-- ======================================================== -->
+        <mxCell id="rel_asosiasi" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;endSize=12;strokeWidth=1.8;strokeColor=#000000;" edge="1" parent="1" source="c_pengemudi" target="c_kendaraan">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
-        <!-- RELASI 3: INHERITANCE (TrukKargo -> KendaraanPengiriman) -->
-        <mxCell id="rel_inh_truk" value="&lt;b&gt;Mewarisi (Darat)&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;strokeWidth=2;strokeColor=#1098AD;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="c_truk" target="c_kendaraan">
+        <!-- ======================================================== -->
+        <!-- 3. INHERITANCE (TrukKargo -> KendaraanPengiriman)       -->
+        <!-- Style: Line with "Extends" -> Hollow triangle end       -->
+        <!-- ======================================================== -->
+        <mxCell id="rel_inh_truk" value="Extends" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;endSize=14;strokeWidth=1.8;strokeColor=#000000;labelBackgroundColor=#FFFFFF;fontStyle=1;fontSize=12;" edge="1" parent="1" source="c_truk" target="c_kendaraan">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
-        <!-- RELASI 4: INHERITANCE (KapalLaut -> KendaraanPengiriman) -->
-        <mxCell id="rel_inh_kapal" value="&lt;b&gt;Mewarisi (Laut)&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;strokeWidth=2;strokeColor=#1C7ED6;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="c_kapal" target="c_kendaraan">
+        <!-- ======================================================== -->
+        <!-- 3. INHERITANCE (KapalLaut -> KendaraanPengiriman)       -->
+        <!-- Style: Line with "Extends" -> Hollow triangle end       -->
+        <!-- ======================================================== -->
+        <mxCell id="rel_inh_kapal" value="Extends" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;endSize=14;strokeWidth=1.8;strokeColor=#000000;labelBackgroundColor=#FFFFFF;fontStyle=1;fontSize=12;" edge="1" parent="1" source="c_kapal" target="c_kendaraan">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
-        <!-- RELASI 5: INHERITANCE (PesawatKargo -> KendaraanPengiriman) -->
-        <mxCell id="rel_inh_pesawat" value="&lt;b&gt;Mewarisi (Udara)&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;strokeWidth=2;strokeColor=#7950F2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="c_pesawat" target="c_kendaraan">
+        <!-- ======================================================== -->
+        <!-- 3. INHERITANCE (PesawatKargo -> KendaraanPengiriman)     -->
+        <!-- Style: Line with "Extends" -> Hollow triangle end       -->
+        <!-- ======================================================== -->
+        <mxCell id="rel_inh_pesawat" value="Extends" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;endSize=14;strokeWidth=1.8;strokeColor=#000000;labelBackgroundColor=#FFFFFF;fontStyle=1;fontSize=12;" edge="1" parent="1" source="c_pesawat" target="c_kendaraan">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
-        <!-- RELASI 6: AGREGASI (DepoLogistik -> TrukKargo) -->
-        <mxCell id="rel_agr_truk" value="&lt;b&gt;Agregasi (1..*)&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.15;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=diamond;startFill=0;endArrow=none;strokeWidth=2;strokeColor=#E03131;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="c_depo" target="c_truk">
+        <!-- ======================================================== -->
+        <!-- 4. AGGREGATION (DepoLogistik -> TrukKargo)              -->
+        <!-- Style: Hollow diamond start -> Open arrow end           -->
+        <!-- ======================================================== -->
+        <mxCell id="rel_agr_truk" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.15;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=diamond;startFill=0;startSize=14;endArrow=open;endFill=0;endSize=12;strokeWidth=1.8;strokeColor=#000000;" edge="1" parent="1" source="c_depo" target="c_truk">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
-        <!-- RELASI 7: AGREGASI (DepoLogistik -> KapalLaut) -->
-        <mxCell id="rel_agr_kapal" value="&lt;b&gt;Agregasi (1..*)&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=diamond;startFill=0;endArrow=none;strokeWidth=2;strokeColor=#E03131;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="c_depo" target="c_kapal">
+        <!-- ======================================================== -->
+        <!-- 4. AGGREGATION (DepoLogistik -> KapalLaut)              -->
+        <!-- Style: Hollow diamond start -> Open arrow end           -->
+        <!-- ======================================================== -->
+        <mxCell id="rel_agr_kapal" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=diamond;startFill=0;startSize=14;endArrow=open;endFill=0;endSize=12;strokeWidth=1.8;strokeColor=#000000;" edge="1" parent="1" source="c_depo" target="c_kapal">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
-        <!-- RELASI 8: AGREGASI (DepoLogistik -> PesawatKargo) -->
-        <mxCell id="rel_agr_pesawat" value="&lt;b&gt;Agregasi (1..*)&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.85;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=diamond;startFill=0;endArrow=none;strokeWidth=2;strokeColor=#E03131;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="c_depo" target="c_pesawat">
+        <!-- ======================================================== -->
+        <!-- 4. AGGREGATION (DepoLogistik -> PesawatKargo)           -->
+        <!-- Style: Hollow diamond start -> Open arrow end           -->
+        <!-- ======================================================== -->
+        <mxCell id="rel_agr_pesawat" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.85;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=diamond;startFill=0;startSize=14;endArrow=open;endFill=0;endSize=12;strokeWidth=1.8;strokeColor=#000000;" edge="1" parent="1" source="c_depo" target="c_pesawat">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
-        <!-- RELASI 9: AGREGASI (DepoLogistik -> Paket) -->
-        <mxCell id="rel_agr_paket" value="&lt;b&gt;Agregasi (1..*)&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=diamond;startFill=0;endArrow=none;strokeWidth=2;strokeColor=#E03131;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="c_depo" target="c_paket">
+        <!-- ======================================================== -->
+        <!-- 4. AGGREGATION (DepoLogistik -> Paket)                  -->
+        <!-- Style: Hollow diamond start -> Open arrow end           -->
+        <!-- ======================================================== -->
+        <mxCell id="rel_agr_paket" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=diamond;startFill=0;startSize=14;endArrow=open;endFill=0;endSize=12;strokeWidth=1.8;strokeColor=#000000;" edge="1" parent="1" source="c_depo" target="c_paket">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ======================================================== -->
+        <!-- LEGENDA PANAH (Sesuai Referensi Gambar Pengguna)        -->
+        <!-- ======================================================== -->
+        <mxCell id="legend_box" value="&lt;b style=&quot;font-size:14px;&quot;&gt;LEGENDA NOTASI RELASI&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1050" width="380" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_content" value="&lt;p style=&quot;margin:4px;&quot;&gt;&lt;b&gt;1. Inheritance:&lt;/b&gt; Garis dengan label &lt;i&gt;Extends&lt;/i&gt; &amp;amp; ujung panah segitiga putih kosong menunjuk ke superclass.&lt;br/&gt;&lt;b&gt;2. Association:&lt;/b&gt; Garis lurus dengan ujung panah terbuka menunjuk ke kelas yang digunakan.&lt;br/&gt;&lt;b&gt;3. Aggregation:&lt;/b&gt; Belah ketupat putih di awal dan ujung panah terbuka menunjuk ke objek yang diagregasikan.&lt;br/&gt;&lt;b&gt;4. Composition:&lt;/b&gt; Belah ketupat hitam di awal dan ujung panah terbuka menunjuk ke komponen part-of.&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontColor=#333333;" vertex="1" parent="legend_box">
+          <mxGeometry y="26" width="380" height="174" as="geometry" />
         </mxCell>
 
       </root>
