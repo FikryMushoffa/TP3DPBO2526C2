@@ -594,27 +594,22 @@ java Main
 
 ### 1. Dokumentasi Program C++
 
-#### a. Tampilan Kondisi Sebelum Data Ditambahkan (Koleksi Kosong)
 <p align="center">
   <img src="./CPP/Dokumentasi/cppOutput1.png" width="750" alt="C++ Output Sebelum Ditambahkan">
 </p>
 
-#### b. Tampilan Kondisi Sesudah: Truk Kargo (Moda Darat - Cyan)
 <p align="center">
   <img src="./CPP/Dokumentasi/cppOutput2.png" width="750" alt="C++ Output Truk Kargo">
 </p>
 
-#### c. Tampilan Kondisi Sesudah: Kapal Laut (Moda Laut - Blue) & Pesawat Kargo (Moda Udara - Magenta)
 <p align="center">
   <img src="./CPP/Dokumentasi/cppOutput3.png" width="750" alt="C++ Output Kapal Laut dan Pesawat Kargo">
 </p>
 
-#### d. Tampilan Kondisi Sesudah: Paket Logistik (Yellow) & Fasilitas Depo Logistik (Red)
 <p align="center">
   <img src="./CPP/Dokumentasi/cppOutput4.png" width="750" alt="C++ Output Paket dan Fasilitas Depo">
 </p>
 
-#### e. Tampilan Kondisi Sesudah: Penugasan Pengemudi & Operator Kendaraan (Green)
 <p align="center">
   <img src="./CPP/Dokumentasi/cppOutput5.png" width="750" alt="C++ Output Penugasan Pengemudi">
 </p>
@@ -623,27 +618,22 @@ java Main
 
 ### 2. Dokumentasi Program Python
 
-#### a. Tampilan Kondisi Sebelum Data Ditambahkan (Koleksi Kosong)
 <p align="center">
   <img src="./Python/Dokumentasi/pythonOutput1.png" width="750" alt="Python Output Sebelum Ditambahkan">
 </p>
 
-#### b. Tampilan Kondisi Sesudah: Truk Kargo (Moda Darat - Cyan)
 <p align="center">
   <img src="./Python/Dokumentasi/pythonOutput2.png" width="750" alt="Python Output Truk Kargo">
 </p>
 
-#### c. Tampilan Kondisi Sesudah: Kapal Laut (Moda Laut - Blue) & Pesawat Kargo (Moda Udara - Magenta)
 <p align="center">
   <img src="./Python/Dokumentasi/pythonOutput3.png" width="750" alt="Python Output Kapal Laut dan Pesawat Kargo">
 </p>
 
-#### d. Tampilan Kondisi Sesudah: Paket Logistik (Yellow) & Fasilitas Depo Logistik (Red)
 <p align="center">
   <img src="./Python/Dokumentasi/pythonOutput4.png" width="750" alt="Python Output Paket dan Fasilitas Depo">
 </p>
 
-#### e. Tampilan Kondisi Sesudah: Penugasan Pengemudi & Operator Kendaraan (Green)
 <p align="center">
   <img src="./Python/Dokumentasi/pythonOutput5.png" width="750" alt="Python Output Penugasan Pengemudi">
 </p>
@@ -652,27 +642,22 @@ java Main
 
 ### 3. Dokumentasi Program Java
 
-#### a. Tampilan Kondisi Sebelum Data Ditambahkan (Koleksi Kosong)
 <p align="center">
   <img src="./Java/Dokumentasi/javaOutput1.png" width="750" alt="Java Output Sebelum Ditambahkan">
 </p>
 
-#### b. Tampilan Kondisi Sesudah: Truk Kargo (Moda Darat - Cyan)
 <p align="center">
   <img src="./Java/Dokumentasi/javaOutput2.png" width="750" alt="Java Output Truk Kargo">
 </p>
 
-#### c. Tampilan Kondisi Sesudah: Kapal Laut (Moda Laut - Blue) & Pesawat Kargo (Moda Udara - Magenta)
 <p align="center">
   <img src="./Java/Dokumentasi/javaOutput3.png" width="750" alt="Java Output Kapal Laut dan Pesawat Kargo">
 </p>
 
-#### d. Tampilan Kondisi Sesudah: Paket Logistik (Yellow) & Fasilitas Depo Logistik (Red)
 <p align="center">
   <img src="./Java/Dokumentasi/javaOutput4.png" width="750" alt="Java Output Paket dan Fasilitas Depo">
 </p>
 
-#### e. Tampilan Kondisi Sesudah: Penugasan Pengemudi & Operator Kendaraan (Green)
 <p align="center">
   <img src="./Java/Dokumentasi/javaOutput5.png" width="750" alt="Java Output Penugasan Pengemudi">
 </p>
