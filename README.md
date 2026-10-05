@@ -86,9 +86,9 @@ Berikut adalah pedoman standar notasi hubungan (*relationship arrows*) dan visib
 
 | Notasi Simbol | Nama Relasi | Simbol Mermaid | Keterangan Hubungan |
 |:---:|:---|:---:|:---|
-| <img src="https://via.placeholder.com/15/000000/000000?text=+" alt="+"> `+` | **Public** | `+` | Atribut atau method dapat diakses oleh siapa saja dari luar kelas. |
-| <img src="https://via.placeholder.com/15/ff0000/ff0000?text=-" alt="-"> `-` | **Private** | `-` | Atribut atau method hanya dapat diakses dari dalam kelas itu sendiri. |
-| <img src="https://via.placeholder.com/15/0000ff/0000ff?text=#" alt="#"> `#` | **Protected** | `#` | Atribut atau method dapat diakses oleh kelas itu sendiri dan kelas-kelas turunannya. |
+|  `+` | **Public** | `+` | Atribut atau method dapat diakses oleh siapa saja dari luar kelas. |
+|  `-` | **Private** | `-` | Atribut atau method hanya dapat diakses dari dalam kelas itu sendiri. |
+|  `#` | **Protected** | `#` | Atribut atau method dapat diakses oleh kelas itu sendiri dan kelas-kelas turunannya. |
 | **`───◁`** | **Inheritance** | `<|--` | Hubungan pewarisan umum (*is-a*), kelas anak mewarisi atribut & method kelas induk. |
 | **`───◆`** | **Composition** | `*--` | Hubungan kepemilikan terikat erat (*part-of*), masa hidup bagian bergantung pada pemilik. |
 | **`───◇`** | **Aggregation** | `o--` | Hubungan kepemilikan lepas (*has-a*), bagian dapat eksis independen dari wadahnya. |
